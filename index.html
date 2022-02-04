@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Dojo Weather</title>
+</head>
+<body>
+    <div class="nav">
+        <div class="nav-menu">
+            <h1 class="titlenav">Dojo Weather</h1>
+                <ul class="nav">
+                    <li><a id="activenav" href="#" onclick="alert('Loading weather report...')">San Jose</a></li>
+                    <li><a class="nav" href="#" onclick="alert('Loading weather report...')">Burbank</a></li>
+                    <li><a class="nav" href="#" onclick="alert('Loading weather report...')">Chicago</a></li>
+                    <li><a class="nav" href="#" onclick="alert('Loading weather report...')">Dallas</a></li>
+                </ul>
+        </div>
+    </div>
+    <div class="container"> 
+        <div id="current-location">
+            <h2>San Jose</h2>
+            <div id="temp-scale">
+                <label>Show temperature in</label>
+                <select id="pick-temp" onchange="convertTemp()">
+                    <option value="celsius">&deg; C</option>
+                    <option value="farenheit">&deg; F</option>
+                </select>
+            </div>
+        </div>
+        <div id="weather">
+            <div class="date">
+                <h3>Today</h3>
+                <img src="images/some_rain.png" alt="Some rain">
+                <p>Some Rain</p>
+                <div class="temps">
+                    <div class="high">
+                        <h4 class="high">Today's High</h4>
+                        <p class="temps">24&deg;</p>
+                    </div>
+                    <div class="low">
+                        <h4 class="low">Today's Low</h4>
+                        <p class="temps">18&deg;</p>
+                    </div>
+                </div>
+            </div>
+            <div class="date">
+                <h3>Tomorrow</h3>
+                <img src="images/some_sun.png" alt="Some sun">
+                <p>Some Sun</p>
+                <div class="temps">
+                    <div class="high">
+                        <h4 class="high">Tomorrow's High</h4>
+                        <p class="temps">27&deg;</p>
+                    </div>
+                    <div class="low">
+                        <h4 class="low">Tomorrow's Low</h4>
+                        <p class="temps">19&deg;</p>
+                    </div>
+                </div>
+            </div>
+            <div class="date">
+                <h3>Friday</h3>
+                <img src="images/some_clouds.png" alt="Some clouds">
+                <p>Some Clouds</p>
+                <div class="temps">
+                    <div class="high">
+                        <h4 class="high">Friday's High</h4>
+                        <p class="temps">21&deg;</p>
+                    </div>
+                    <div class="low">
+                        <h4 class="low">Friday's Low</h4>
+                        <p class="temps">16&deg;</p>
+                    </div>
+                </div>
+            </div>
+            <div class="date">
+                <h3>Saturday</h3>
+                <img src="images/some_sun.png" alt="Some sun">
+                <p>Some Sun</p>
+                <div class="temps">
+                    <div class="high">
+                        <h4 class="high">Satuday's High</h4>
+                        <p class="temps">26&deg;</p>
+                    </div>
+                    <div class="low">
+                        <h4 class="low">Saturday's Low</h4>
+                        <p class="temps">21&deg;</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="cookiebanner">
+        <img id="cookie" src="images/cookie.png" alt="cookie icon">
+        <div id="cookie-text">  
+            <h3>Stop! Cookie time...</h3>
+            <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a></p>
+        </div>
+        <a href="#" id="accept" onclick="acceptCookies()">I Accept</a>
+    </div>
+</body>
+</html>
